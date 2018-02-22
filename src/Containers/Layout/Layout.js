@@ -6,6 +6,10 @@ import {
 import { Link } from 'react-router-dom';
 
 class Layout extends Component {
+
+    fetchDownload = () => {
+        window.location.href = 'http://localhost:5000/api/pdf';
+    }
     render() {
         return (
             <div>
@@ -14,18 +18,29 @@ class Layout extends Component {
                         <Menu.Item header>
                             <Link to='/'> <Icon name='home' />MyPortifolio</Link>
                         </Menu.Item>
-                        <Menu.Item as='a' header>
+                        <Menu.Item header>
                             <Icon name='male' />
-                            Sobre Mim
+                            <Link to="/about-me">Sobre Mim</Link>
                         </Menu.Item>
-                        <Menu.Item as='a' position="right">
+                        <Menu.Item onClick={this.fetchDownload} position="right">
                             <Icon name='download' />
                             Resume</Menu.Item>
                     </Container>
                 </Menu>
                 {this.props.children}
+                <Segment
+                    inverted
+                    style={{ position: 'fixed', bottom: 0, width: '100%', margin: '2em 0em 0em 0em', borderRadius: 0 }}
+                >
+                    <Container textAlign='center'>
+                        <Menu.Item header>
+                            <a href='mailto:pedrobertao11@example.com?subject="Gostaria de saber sobre"'> <Icon name='mail' />Contact</a>
+                        </Menu.Item>
 
-            </div>
+                    </Container>
+                </Segment>
+
+            </div >
         )
     }
 }

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Profile from './Containers/Profile/Profile';
-import { BrowserRouter } from 'react-router-dom';
+import About from './Components/About/About';
+import { BrowserRouter, Switch, Redirect, Route } from 'react-router-dom';
 import Layout from './Containers/Layout/Layout';
 
 class App extends Component {
@@ -10,9 +11,13 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Layout>
-          <Profile />
+          <Switch>
+            <Route path="/about-me" component={About}></Route>
+            <Route path="/" component={Profile}></Route>
+            <Redirect to="/" />
+          </Switch>
         </Layout>
-      </BrowserRouter>
+      </BrowserRouter >
     );
   }
 }
