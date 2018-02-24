@@ -20,11 +20,18 @@ class Layout extends Component {
                         </Menu.Item>
                         <Menu.Item header>
                             <Icon name='male' />
-                            <Link to="/about-me">Sobre Mim</Link>
+                            <Link to="/about-me">About Me</Link>
                         </Menu.Item>
-                        <Menu.Item onClick={this.fetchDownload} position="right">
+                        {/* <Menu.Item onClick={this.fetchDownload} position="right">
                             <Icon name='download' />
-                            Resume</Menu.Item>
+                            Resume</Menu.Item> */}
+                        <Menu.Menu position="right">
+                            <Menu.Item header onClick={this.fetchDownload}>
+                                <a href="https://www.github.com/pedrobertao">GitHub <Icon name='github square' /></a>
+                            </Menu.Item>
+                            <Menu.Item headeronClick={this.fetchDownload}>
+                                <a href="https://www.linkedin.com/in/pedro-bert%C3%A3o-7a574a87/">LinkedIn <Icon name='linkedin square' /></a></Menu.Item>
+                        </Menu.Menu>
                     </Container>
                 </Menu>
                 {this.props.children}
@@ -34,7 +41,7 @@ class Layout extends Component {
                 >
                     <Container textAlign='center'>
                         <Menu.Item header>
-                            <a href='mailto:pedrobertao11@example.com?subject="Gostaria de saber sobre"'> <Icon name='mail' />Contact</a>
+                            <a style={{ color: 'white', fontSize: '1.3em' }} href='mailto:pedrobertao11@example.com?subject="Gostaria de saber sobre"'> <Icon name='mail' />Contact</a>
                         </Menu.Item>
 
                     </Container>

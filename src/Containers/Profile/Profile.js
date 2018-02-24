@@ -69,7 +69,7 @@ class Profile extends Component {
                                 <Segment>
                                     <Container>
                                         <h3> PandôApps – Programador front/backend de aplicativos (2017)</h3>
-                                        Atualmente estou trabalhando como programador de Front e Backend na empresa<a href="https://www.pandoapps.com.br/">Pandô Apps</a>. O projeto que estou envolvido é
+                                        Atualmente estou trabalhando como programador de Front e Backend na empresa <a href="https://www.pandoapps.com.br/">Pandô Apps</a>. O projeto que estou envolvido é
                                             responsável por rastreamento de objetos de alto valor monetário. Minhas funções variam entre desenvolvimento do design, lógica
                                             e funcionalidades no frontend. No backend trabalhamos com Node.JS e Postgresql para o servidor e banco de dados da aplicação
                                             respectivamente. Este trabalho está sendo uma excelente oportunidade de vivenciar um ambiente de desenvolvimento ambicioso e
