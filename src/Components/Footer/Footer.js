@@ -11,7 +11,7 @@ const footer = (props) => {
         >
             <Container textAlign='center'>
                 <Menu.Item header>
-                    <a style={{ color: 'white', fontSize: '1.3em' }} href='mailto:pedrobertao11@example.com?subject="Gostaria de saber sobre"'> <Icon name='mail' />Contact</a>
+                    <a style={{ color: 'white', fontSize: '1.3em' }} href='mailto:pedrobertao11@hotmail.com?subject="Gostaria de saber sobre"'> <Icon name='mail' />Contact</a>
                 </Menu.Item>
             </Container>
         </Segment>
