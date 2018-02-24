@@ -2,10 +2,11 @@ import React from 'react';
 import { Item, Icon } from 'semantic-ui-react'
 
 const profileHeader = (props) => {
+    let imageSize = window.innerWidth < 500 ? 'tiny' : 'medium';
     return (
         <Item.Group>
             <Item>
-                <Item.Image bordered circular size='medium' src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmlAAAAJGY5YzAwYjFiLWFmM2QtNGUxYi04OWZkLWRlZDVlYmExYmExOQ.jpg' />
+                <Item.Image bordered circular size={imageSize} src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmlAAAAJGY5YzAwYjFiLWFmM2QtNGUxYi04OWZkLWRlZDVlYmExYmExOQ.jpg' />
                 <Item.Content verticalAlign='middle'>
                     <Item.Header>
                         Pedro Henrique Bertão Matos

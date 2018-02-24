@@ -4,10 +4,11 @@ import { Container, Card, Icon, Image, Segment, List, Item } from 'semantic-ui-r
 
 
 const About = (props) => {
+
     return (
         <div>
             <Container text style={{ marginBottom: '4em', marginTop: '3em' }}>
-                <ProfileHeader />
+                {window.innerWidth > 500 ? <ProfileHeader /> : null}
                 <Segment.Group>
                     <Segment>Sobre mim</Segment>
                     <Segment.Group>
