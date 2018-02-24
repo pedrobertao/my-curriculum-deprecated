@@ -16,7 +16,7 @@ class Layout extends Component {
                 <Menu fixed="top" inverted>
                     <Container>
                         <Menu.Item header>
-                            <Link to='/'> <Icon name='home' />MyPortifolio</Link>
+                            <Link to='/'> <Icon name='home' />MyPortfolio</Link>
                         </Menu.Item>
                         <Menu.Item header>
                             <Icon name='male' />

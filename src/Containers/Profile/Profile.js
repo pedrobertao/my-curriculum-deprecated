@@ -18,7 +18,7 @@ class Profile extends Component {
                 <Container text style={{ marginBottom: '4em', marginTop: '3em' }}>
                     <Item.Group>
                         <Item>
-                            <Item.Image circular size='medium' src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmlAAAAJGY5YzAwYjFiLWFmM2QtNGUxYi04OWZkLWRlZDVlYmExYmExOQ.jpg' />
+                            <Item.Image bordered circular size='medium' src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmlAAAAJGY5YzAwYjFiLWFmM2QtNGUxYi04OWZkLWRlZDVlYmExYmExOQ.jpg' />
                             <Item.Content verticalAlign='middle'>
                                 <Item.Header>
                                     Pedro Henrique Bertão Matos
