@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Profile from './Containers/Profile/Profile';
+import Profile from './Components/Profile/Profile';
 import About from './Components/About/About';
 import { BrowserRouter, Switch, Redirect, Route } from 'react-router-dom';
 import Layout from './Containers/Layout/Layout';

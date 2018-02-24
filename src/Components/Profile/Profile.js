@@ -3,6 +3,7 @@ import { Container, Card, Icon, Image, Segment, Feed, Item } from 'semantic-ui-r
 import Aux from '../../hoc/Aux';
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header/Header';
 import Slider from 'react-slick';
+import ProfileHeader from '../ProfileHeader/ProfileHeader';
 
 class Profile extends Component {
     render() {
@@ -16,21 +17,7 @@ class Profile extends Component {
         return (
             <div>
                 <Container text style={{ marginBottom: '4em', marginTop: '3em' }}>
-                    <Item.Group>
-                        <Item>
-                            <Item.Image bordered circular size='medium' src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmlAAAAJGY5YzAwYjFiLWFmM2QtNGUxYi04OWZkLWRlZDVlYmExYmExOQ.jpg' />
-                            <Item.Content verticalAlign='middle'>
-                                <Item.Header>
-                                    Pedro Henrique Bertão Matos
-                            </Item.Header>
-                                <Item.Extra><Icon name='student' />Estudante de Engenharia da Computação</Item.Extra>
-                                <Item.Extra><Icon name='code' />Engenheiro de Software </Item.Extra>
-                                <Item.Extra><Icon name='hand rock' />eSport Entusiasta</Item.Extra>
-                                <Item.Extra><Icon name='world' />Aspirante a empreendedor</Item.Extra>
-                            </Item.Content>
-                        </Item>
-                    </Item.Group>
-
+                    <ProfileHeader />
                     <Segment.Group>
                         <Segment>Formação Acadêmica</Segment>
                         <Segment.Group>

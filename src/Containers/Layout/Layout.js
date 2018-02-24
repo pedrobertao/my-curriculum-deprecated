@@ -1,55 +1,58 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux';
 import {
-    Button, Container, Grid, Header, Icon, Image, Item, Label, Menu, Segment, Step, Table,
+    Button, Container, Grid, Header, Icon, Image, Item, Label, Menu, Segment, Step, Sidebar,
 } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
+import { Link, Redirect, withRouter } from 'react-router-dom';
+import Toolbar from '../../Components/Navigation/Toolbar/Toolbar';
+import Footer from '../../Components/Footer/Footer'
 
 class Layout extends Component {
 
+    state = {
+        sideBar: false
+    }
     fetchDownload = async () => {
         window.location.href = 'http://localhost:5000/api/pdf';
     }
+
+    sideBarOpenHandler = () => {
+        this.setState({ sideBar: !this.state.sideBar })
+    }
+
+    sideBarCloseHandler = () => {
+        this.setState({ sideBar: false })
+    }
+    navigateSideBar = (route) => {
+        this.props.history.push(route);
+        this.setState({ sideBar: false })
+    }
+
     render() {
         return (
-            <div>
-                <Menu fixed="top" inverted>
-                    <Container>
-                        <Menu.Item header>
-                            <Link to='/'> <Icon name='home' />MyPortfolio</Link>
-                        </Menu.Item>
-                        <Menu.Item header>
+            <Aux>
+                <Sidebar.Pushable >
+                    <Sidebar as={Menu} animation='overlay' width='thin' visible={this.state.sideBar} icon='labeled' vertical inverted>
+                        <Menu.Item onClick={() => this.navigateSideBar('/')} name='MyPortfolio'>
+                            <Icon name='home' />
+                            MyPortfolio
+                    </Menu.Item>
+                        <Menu.Item onClick={() => this.navigateSideBar('/about-me')} name='About Me'>
                             <Icon name='male' />
-                            <Link to="/about-me">About Me</Link>
-                        </Menu.Item>
-                        {/* <Menu.Item onClick={this.fetchDownload} position="right">
-                            <Icon name='download' />
-                            Resume</Menu.Item> */}
-                        <Menu.Menu position="right">
-                            <Menu.Item header onClick={this.fetchDownload}>
-                                <a href="https://www.github.com/pedrobertao">GitHub <Icon name='github square' /></a>
-                            </Menu.Item>
-                            <Menu.Item headeronClick={this.fetchDownload}>
-                                <a href="https://www.linkedin.com/in/pedro-bert%C3%A3o-7a574a87/">LinkedIn <Icon name='linkedin square' /></a></Menu.Item>
-                        </Menu.Menu>
-                    </Container>
-                </Menu>
-                {this.props.children}
-                <Segment
-                    inverted
-                    style={{ position: 'fixed', bottom: 0, width: '100%', margin: '2em 0em 0em 0em', borderRadius: 0 }}
-                >
-                    <Container textAlign='center'>
-                        <Menu.Item header>
-                            <a style={{ color: 'white', fontSize: '1.3em' }} href='mailto:pedrobertao11@example.com?subject="Gostaria de saber sobre"'> <Icon name='mail' />Contact</a>
-                        </Menu.Item>
-
-                    </Container>
-                </Segment>
-
-            </div >
+                            About Me
+                    </Menu.Item>
+                    </Sidebar>
+                    <Sidebar.Pusher>
+                        {<Toolbar SideBarHandler={this.sideBarOpenHandler} />}
+                        <div onClick={this.sideBarCloseHandler}>
+                            {this.props.children}
+                        </div>
+                    </Sidebar.Pusher>
+                </Sidebar.Pushable>
+                {<Footer />}
+            </Aux>
         )
     }
 }
 
-export default Layout;
+export default withRouter(Layout);
