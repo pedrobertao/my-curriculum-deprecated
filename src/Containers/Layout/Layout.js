@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 class Layout extends Component {
 
-    fetchDownload = () => {
+    fetchDownload = async () => {
         window.location.href = 'http://localhost:5000/api/pdf';
     }
     render() {

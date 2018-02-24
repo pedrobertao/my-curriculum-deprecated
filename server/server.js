@@ -8,7 +8,7 @@ app.get('/api/hello', (req, res) => {
 });
 
 app.get('/api/pdf', (req, res) => {
-  res.send(__dirname + '/resume.pdf');
+  res.download(__dirname + '/resume.pdf');
 })
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

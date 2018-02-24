@@ -18,7 +18,7 @@ class Profile extends Component {
                 <Container text style={{ marginBottom: '4em', marginTop: '3em' }}>
                     <Item.Group>
                         <Item>
-                            <Item.Image circular size='medium' src='https://scontent.fplu3-1.fna.fbcdn.net/v/t1.0-9/12313840_10207641767979948_7805233275075676184_n.jpg?oh=0cdbec1c32a598f26547d532acfeea32&oe=5B185F0B' />
+                            <Item.Image circular size='medium' src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmlAAAAJGY5YzAwYjFiLWFmM2QtNGUxYi04OWZkLWRlZDVlYmExYmExOQ.jpg' />
                             <Item.Content verticalAlign='middle'>
                                 <Item.Header>
                                     Pedro Henrique Bertão Matos
@@ -34,8 +34,8 @@ class Profile extends Component {
                     <Segment.Group>
                         <Segment>Formação Acadêmica</Segment>
                         <Segment.Group>
-                            <Segment>Universidade Federal de Itajubá - 2013-Atual</Segment>
-                            <Segment>California State University, Sacramento - 06/2015-08/2016</Segment>
+                            <Segment>Universidade Federal de Itajubá  2013-Atual</Segment>
+                            <Segment>California State University, Sacramento  06/2015-08/2016</Segment>
                         </Segment.Group>
                     </Segment.Group>
                     <Segment.Group>
