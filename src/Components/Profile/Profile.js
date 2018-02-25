@@ -19,14 +19,14 @@ class Profile extends Component {
                 <Container text style={{ fontFamily: 'Ubuntu', marginBottom: '4em', marginTop: '3em' }}>
                     <ProfileHeader />
                     <Segment.Group>
-                        <Segment>Formação Acadêmica</Segment>
+                        <Segment><h2>Formação Acadêmica</h2></Segment>
                         <Segment.Group>
                             <Segment>Universidade Federal de Itajubá  2013-Atual</Segment>
                             <Segment>California State University, Sacramento  06/2015-08/2016</Segment>
                         </Segment.Group>
                     </Segment.Group>
                     <Segment.Group>
-                        <Segment>Experiências Profissionais</Segment>
+                        <Segment><h2>Experiências Profissionais</h2></Segment>
                         <Segment.Group>
                             <div>
                                 <Container>

@@ -10,7 +10,7 @@ const About = (props) => {
             <Container text style={{ fontFamily: 'Ubuntu', marginBottom: '4em', marginTop: '3em' }}>
                 {window.innerWidth > 500 ? <ProfileHeader /> : null}
                 <Segment.Group>
-                    <Segment>Sobre mim</Segment>
+                    <Segment><h2>Sobre mim</h2></Segment>
                     <Segment.Group>
                         <Segment>
                             Através dos meus anos de faculdade, adquiri certas habilidades necessárias para prosperar no cenário da engenharia :
