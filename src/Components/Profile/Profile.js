@@ -16,7 +16,7 @@ class Profile extends Component {
         };
         return (
             <div>
-                <Container text style={{ marginBottom: '4em', marginTop: '3em' }}>
+                <Container text style={{ fontFamily: 'Ubuntu', marginBottom: '4em', marginTop: '3em' }}>
                     <ProfileHeader />
                     <Segment.Group>
                         <Segment>Formação Acadêmica</Segment>
