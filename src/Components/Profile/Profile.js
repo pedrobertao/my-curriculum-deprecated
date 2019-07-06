@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Container, Card, Icon, Image, Segment, Feed, Item } from 'semantic-ui-react'
-import Aux from '../../hoc/Aux';
-import Header from 'semantic-ui-react/dist/commonjs/elements/Header/Header';
-import Slider from 'react-slick';
+import { Container, Segment } from 'semantic-ui-react'
+
 import ProfileHeader from '../ProfileHeader/ProfileHeader';
+
+import tl from '../../utils/translations'
 
 class Profile extends Component {
     render() {
@@ -19,10 +19,10 @@ class Profile extends Component {
                 <Container text style={{ fontFamily: 'Ubuntu', marginBottom: '4em', marginTop: '3em' }}>
                     <ProfileHeader />
                     <Segment.Group>
-                        <Segment><h2>Formação Acadêmica</h2></Segment>
+                        <Segment><h2>{tl.t('education')}</h2></Segment>
                         <Segment.Group>
-                            <Segment>Universidade Federal de Itajubá  2013-Atual</Segment>
-                            <Segment>California State University, Sacramento  06/2015-08/2016</Segment>
+                            <Segment>Universidade Federal de Itajubá 2013-2018</Segment>
+                            <Segment>California State University, Sacramento 06/2015-08/2016</Segment>
                         </Segment.Group>
                     </Segment.Group>
                     <Segment.Group>
@@ -43,12 +43,8 @@ class Profile extends Component {
                             <div>
                                 <Segment>
                                     <Container>
-                                        <h3>The Latest (StartUp) – Programador e Desenvolvedor de aplicação móvel (05-2016/07-2016) </h3>
-                                        Trabalhei durante dois meses na StartUp <a href="https://www.thelastest.com">The Latest</a> como programador e desenvolvedor de aplicação móvel. Meu trabalho tinha
-                                    como principal objetivo desenvolver um aplicativo para o site da empresa. A empresa estava perto de lançar seu produto final e
-                                    fui encarregado de desenvolver o aplicativo para sistema android durante meu período lá. Foi uma ótima oportunidade para
-                                    aprender sobre o mundo das StartUps e vivenciar um ambiente americano de empresa.
-
+                                        <h3>{tl.t('experience.thelatest.title')}</h3>
+                                        {tl.t('experience.thelatest.description')}                                   
                                         </Container>
                                 </Segment>
                             </div>

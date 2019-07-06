@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    Button, Container, Icon, Image, Item, Menu, Segment
-} from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import {  Container, Icon, Menu } from 'semantic-ui-react';
 
 const menuDesktop = (props) => {
     return (
