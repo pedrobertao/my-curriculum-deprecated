@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    Button, Container, Icon, Image, Item, Menu, Segment
-} from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import {  Container, Icon, Menu } from 'semantic-ui-react';
 
 const menuDesktop = (props) => {
     return (
@@ -11,10 +8,10 @@ const menuDesktop = (props) => {
                 <Icon name='bars' size='large' />
             </Menu.Item>
             <Menu.Menu position="right">
-                <Menu.Item header onClick={this.fetchDownload}>
+                <Menu.Item>
                     <a href="https://www.github.com/pedrobertao"><Icon size='large' name='github square' /></a>
                 </Menu.Item>
-                <Menu.Item headeronClick={this.fetchDownload}>
+                <Menu.Item >
                     <a href="https://www.linkedin.com/in/pedro-bert%C3%A3o-7a574a87/"><Icon size='large' name='linkedin square' /></a></Menu.Item>
             </Menu.Menu>
         </Container>
