@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Aux';
-import {
-    Button, Container, Grid, Header, Icon, Image, Item, Label, Menu, Segment, Step, Sidebar,
-} from 'semantic-ui-react'
-import { Link, Redirect, withRouter } from 'react-router-dom';
+import { Icon,  Menu,Sidebar, } from 'semantic-ui-react'
+import { withRouter } from 'react-router-dom';
+
 import Toolbar from '../../Components/Navigation/Toolbar/Toolbar';
 import Footer from '../../Components/Footer/Footer'
+import LanguageDropdown from '../../Components/LanguageDropdown';
+
+import tl from '../../utils/translations'
 
 class Layout extends Component {
 
@@ -30,17 +31,20 @@ class Layout extends Component {
 
     render() {
         return (
-            <Aux>
-                <Sidebar.Pushable >
+            <React.Fragment>
+                <Sidebar.Pushable>
                     <Sidebar as={Menu} animation='overlay' width='thin' visible={this.state.sideBar} icon='labeled' vertical inverted>
                         <Menu.Item onClick={() => this.navigateSideBar('/')} name='MyPortfolio'>
                             <Icon name='home' />
-                            MyPortfolio
+                            {tl.t('myport')}
                     </Menu.Item>
                         <Menu.Item onClick={() => this.navigateSideBar('/about-me')} name='About Me'>
                             <Icon name='male' />
-                            About Me
+                            {tl.t('aboutme')}
                     </Menu.Item>
+                    <Menu.Item>
+                    <LanguageDropdown short />
+                </Menu.Item>
                     </Sidebar>
                     <Sidebar.Pusher>
                         {<Toolbar SideBarHandler={this.sideBarOpenHandler} />}
@@ -49,8 +53,8 @@ class Layout extends Component {
                         </div>
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
-                {<Footer />}
-            </Aux>
+                <Footer />
+            </React.Fragment>
         )
     }
 }

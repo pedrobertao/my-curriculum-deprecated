@@ -1,8 +1,21 @@
 {
     "experience":{
+        "title": "Experiência Profissional",
         "thelatest": {
-            "title": "The Latest (StartUp) – Programador e Desenvolvedor de aplicação móvel (05-2016/07-2016)",
+            "title": "The Latest (StartUp) – Programador e Desenvolvedor de aplicação móvel (05/2016 - 07/2016)",
             "description": "Trabalhei durante dois meses na StartUp The Latest como programador e desenvolvedor de aplicação móvel. Meu trabalho tinha como principal objetivo desenvolver um aplicativo para o site da empresa. A empresa estava perto de lançar seu produto final e fui encarregado de desenvolver o aplicativo para sistema android durante meu período lá. Foi uma ótima oportunidade para aprender sobre o mundo das StartUps e vivenciar um ambiente americano de empresa."
+        },
+        "aiesec":{
+            "title" : "AIESEC – Diretor de Intercâmbios Internacionais (2014)",
+            "description": "Durante o ano de 2014 fiz parte da empresa global AIESEC com o objetivo de exercitar minhas habilidades de liderança, gestão, e trabalho de equipe. Meu trabalho principal realizado na AIESEC era de coordenar um time de 3 estudantes com o objetivo de oferecer intercâmbios internacionais advindos da organização para estudantes de todas faculdades do sul de Minas Gerais. Esse trabalho elevou meus conhecimentos relacionados à liderança e gestão de pessoas, além de me ensinar elementos chaves na área de administração."
+        },
+        "pando": {
+            "title": "PandôApps – Programador front/backend de aplicativos (2017-2018)",
+            "description": "Durante o período de 04/2017-04/2018 trabalhei como programador de Front e Backend na empresa Pandô Apps. O projeto que fui responsável envolve rastreamento de objetos de alto valor monetário. Minhas funções variavam entre desenvolvimento do design, lógica e funcionalidades no frontend. No backend trabalhamos com Node.JS e Postgresql para o servidor e banco de dados da aplicação respectivamente. Este projeto foi uma excelente oportunidade de vivenciar um ambiente de desenvolvimento ambicioso e desafiador. Além disso, me ajudou a desenvolver minhas habilidades como engenheiro de software no geral, elevando minhas noções de demanda, qualidade e fabricação de softwares."
+        },
+        "getty": {
+            "title": "Getty/IO - Atual",
+            "description": "Atualmente trabalho como engenheiro de software pleno, trabalhando com as últimas tecnologias do mercado tanto para backend quanto para frontend. Trabalhamos com AWS, Node, Mongo, React, React-Native, GraphQL, grpc e tecnologias derivadas da Rede TRON (TRX)."
         }
     },
     "aboutme": "Sobre mim",
@@ -16,5 +29,12 @@
         "honor":"Honra e Honestidade - Ser honesto com você mesmo e todos ao seu redor para atingir resultados poderosos.",
         "resolution":"Resolução de Problemas - Básico para qualquer aspirante à engenheiro, minhas habilidades para a resolução de problemas só tem aumentado ao longo dos anos.Problemas são obstáculos que devem ser resolvidos de maneira rápida, com qualidade e de forma eficiente. Isto é o lema de minha carreira como engenheiro."
     },
-    "education": "Formação Acadêmica"
+    "education": "Formação Acadêmica",
+    "maininfo":{
+        "job": "Engenheiro de Software pleno at",
+        "blockchain": "Blockchain entusiasta",
+        "esport": "eSporst Fanático",
+        "ent": "Aspirante a empreendedor"
+    },
+    "contact": "Contactar"
 }
