@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Icon, Menu, Dropdown } from 'semantic-ui-react';
+import { Container, Icon, Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 import LanguageDropdown from '../../../Components/LanguageDropdown'
